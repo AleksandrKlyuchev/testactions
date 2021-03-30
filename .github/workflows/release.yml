@@ -23,7 +23,7 @@ jobs:
           GITHUB_RUN_NUMBER: ${{ env.GITHUB_RUN_NUMBER }}
         with:
           tag_name: $GITHUB_RUN_NUMBER
-          release_name: Release $GITHUB_RUN_NUMBER
+          release_name: ${{Release GITHUB_RUN_NUMBER}}
           draft: false
           prerelease: false
       - name: Upload Release Asset
