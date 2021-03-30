@@ -20,10 +20,11 @@ jobs:
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_RUN_NUMBER: ${{ env.GITHUB_RUN_NUMBER }}
         with:
-          tag_name: ${{ env.GITHUB_RUN_NUMBER }}
-          release_name: Release ${{ env.GITHUB_RUN_NUMBER }}
-          draft: true
+          tag_name: ${{ GITHUB_RUN_NUMBER }}
+          release_name: Release ${{ GITHUB_RUN_NUMBER }}
+          draft: false
           prerelease: false
       - name: Upload Release Asset
         id: upload-release-asset
