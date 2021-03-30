@@ -8,6 +8,6 @@ void test()
 
 int main(int argc, char** args)
 {
-    std::cout<<"!!!"<<std::endl;
+    std::cout<<"!!!123"<<std::endl;
     return 0;
 }
