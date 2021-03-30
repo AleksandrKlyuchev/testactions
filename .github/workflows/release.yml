@@ -14,8 +14,6 @@ jobs:
           submodules: true
       - run: cmake .
       - run: make
-      - run: make test
-      - run: make package
       - run: ls
       - name: Create Release
         id: create_release
