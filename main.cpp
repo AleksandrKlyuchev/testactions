@@ -1,5 +1,5 @@
 #include <iostream>
-//added cooments
+//added comments
 
 void test()
 {
