@@ -23,7 +23,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}/v2
           release_name: Release ${{ github.ref }}/v2
-          draft: false
+          draft: true
           prerelease: false
       - name: Upload Release Asset
         id: upload-release-asset
