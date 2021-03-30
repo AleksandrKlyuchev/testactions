@@ -22,8 +22,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_RUN_NUMBER: ${{ env.GITHUB_RUN_NUMBER }}
         with:
-          tag_name: $GITHUB_RUN_NUMBER
-          release_name: ${{Release GITHUB_RUN_NUMBER}}
+          tag_name: release6
+          release_name: release6
           draft: false
           prerelease: false
       - name: Upload Release Asset
@@ -36,4 +36,3 @@ jobs:
           asset_path: ./hello
           asset_name: hello
           asset_content_type: application/vnd.debian.binary-package
-          allow_override: true
