@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.8.9)
-project (hello)
+#project (hello)
+project(hello VERSION 0.0.$ENV{GITHUB_RUN_NUMBER})
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 add_executable(hello main.cpp)
